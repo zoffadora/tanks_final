@@ -15,7 +15,10 @@ class Unit:
         self._y = y
         self._vx = 0
         self._vy = 0
-        self._canvas = canvas
+
+
+
+        self.__canvas = canvas #!
         self._hp = 100
         self._dx = 0
         self._dy = 0
@@ -162,10 +165,10 @@ class Unit:
     def is_alive(self):
         return self._alive
 
-    def get_hp(self):
+    def get_hp(self): #для хп
         return self._hp
 
-    def get_speed(self):
+    def get_speed(self): #для скорости
         return self._speed
 
     def get_x(self):

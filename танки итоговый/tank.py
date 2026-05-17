@@ -47,7 +47,7 @@ class Tank:
         return self.__alive
 
     def take_damage(self, damage):
-        self.__hp -= damage
+        self.__hp -= damage #-здоровье
         if self.__hp <= 0:
             self.__alive = False
             try:
